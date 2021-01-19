@@ -1,1 +1,21 @@
 <!-- Aqui entra a tabela -->
+<div class="text-center">
+    <h1 class="mt-5">Tasks</h1>
+</div>
+<div class="mt-5">
+    <table class="table table-bordered table-light table-striped">
+      <thead style="opacity: 90%; background-color: black; color: white;">
+        <tr>
+          <th class="text-center" *ngFor="let column of headers">{{column}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of tasks">
+          <th class="text-center">{{t.id}}</th>
+          <td class="text-center">{{t.data}}</td>
+          <td class="text-center">{{t.titulo}}</td>
+          <td class="text-center"><a routerLink="/planilhas-detalhe/{{t.id}}" class="btn btn-warning" style="color: white; font-size: 15px;"><b>Detalhe</b></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
