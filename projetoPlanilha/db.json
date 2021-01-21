@@ -2,32 +2,35 @@
     "posts":[
         {
             "id": 1,
-            "data": "2021-01-07",
+            "data": "07/01/2021",
             "trabalhosDoDia": [{
                 "tasks": [
                 {
-                    "título": "Task",
+                    "titulo": "Task",
                     "tipoDaAtividade": "Estudo",
                     "horaDeInicio": "09:00",
                     "horaTermino": "12:00",
                     "tempoDaAtividade": "",
-                    "Projeto": "MAG"
+                    "Projeto": "MAG",
+                    "Descricao": "Lorem ipsum nulla aenean malesuada leo elit curabitur, aenean scelerisque rutrum ligula convallis sem, etiam nostra lectus arcu netus ultricies."
                 },
                 {
-                    "título": "Task 2",
-                    "tipoDaAtividade": "Estudo",
+                    "titulo": "Task 2",
+                    "tipoDaAtividade": "Desenvolvimento",
                     "horaDeInicio": "12:00",
                     "horaTermino": "15:00",
                     "tempoDaAtividade": "",
-                    "Projeto": "MAG"
+                    "Projeto": "MAG",
+                    "Descricao": "Lorem ipsum nulla aenean malesuada leo elit curabitur, aenean scelerisque rutrum ligula convallis sem, etiam nostra lectus arcu netus ultricies."
                 },
                 {
-                    "título": "Task 3",
-                    "tipoDaAtividade": "Estudo",
+                    "titulo": "Task 3",
+                    "tipoDaAtividade": "Teste",
                     "horaDeInicio": "15:00",
                     "horaTermino": "18:00",
                     "tempoDaAtividade": "",
-                    "Projeto": "MAG"
+                    "Projeto": "MAG",
+                    "Descricao": "Lorem ipsum nulla aenean malesuada leo elit curabitur, aenean scelerisque rutrum ligula convallis sem, etiam nostra lectus arcu netus ultricies."
                 }
             ]
             }]
@@ -38,7 +41,7 @@
             "trabalhosDoDia": [{
                 "tasks": [
                 {
-                    "título": "Task",
+                    "titulo": "Task",
                     "tipoDaAtividade": "Estudo",
                     "horaDeInicio": "09:00",
                     "horaTermino": "12:00",
@@ -46,7 +49,7 @@
                     "Projeto": "MAG 2"
                 },
                 {
-                    "título": "Task 2",
+                    "titulo": "Task 2",
                     "tipoDaAtividade": "Estudo",
                     "horaDeInicio": "12:00",
                     "horaTermino": "15:00",
@@ -54,7 +57,7 @@
                     "Projeto": "MAG 2"
                 },
                 {
-                    "título": "Task 3",
+                    "titulo": "Task 3",
                     "tipoDaAtividade": "Estudo",
                     "horaDeInicio": "15:00",
                     "horaTermino": "18:00",

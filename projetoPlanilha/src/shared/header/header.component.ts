@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'c-header',
@@ -6,4 +7,15 @@ import { Component } from '@angular/core'
     styleUrls: ['header.component.css']
 })
 
-export class HeaderComponent{}
+export class HeaderComponent{
+    constructor(private router: Router){}
+
+
+    isHomeRoute(){
+        return this.router.url != '/home';
+    }
+
+    confirmarExcluir(){
+        
+    }
+}

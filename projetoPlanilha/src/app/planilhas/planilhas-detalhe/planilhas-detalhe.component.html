@@ -1,0 +1,32 @@
+<!-- <div class="row" *ngFor="let t of tasksPost">
+      <div class="col-sm">
+        {{t.titulo}}
+      </div>
+      <div class="col-sm">
+        {{t.Projeto}}
+      </div>
+      <div class="col-sm">
+        {{t.tipoDaAtividade}}
+      </div>
+    </div> -->
+<div class="container mt-5">
+  <h2 class="text-center">Detalhes do dia {{diaDaAtividade}}</h2>
+</div>
+<table class="table table-bordered table-light table-striped mt-5">
+  <thead style="opacity: 90%; background-color: black; color: white;">
+    <tr>
+      <th class="text-center" *ngFor="let colu of cab">{{colu}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tp of tasksPost">
+      <th class="text-center">{{tp.titulo}}</th>
+      <td class="text-center">{{tp.Projeto}}</td>
+      <td class="text-center">{{tp.tipoDaAtividade}}</td>
+      <td class="text-center">{{tp.Descricao}}</td>
+      <td class="text-center">{{tp.horaDeInicio}}</td>
+      <td class="text-center">{{tp.horaTermino}}</td>
+      <td class="text-center">{{tp.tempoDaAtividade}}</td>
+    </tr>
+  </tbody>
+</table>

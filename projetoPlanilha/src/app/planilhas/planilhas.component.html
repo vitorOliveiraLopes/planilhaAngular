@@ -13,8 +13,8 @@
         <tr *ngFor="let t of tasks">
           <th class="text-center">{{t.id}}</th>
           <td class="text-center">{{t.data}}</td>
-          <td class="text-center">{{t.titulo}}</td>
-          <td class="text-center"><a routerLink="/planilhas-detalhe/{{t.id}}" class="btn btn-warning" style="color: white; font-size: 15px;"><b>Detalhe</b></a></td>
+          <!-- <td class="text-center">{{teste}}</td> -->
+          <td class="text-center"><a routerLink="/task-detalhes/{{t.id}}" class="btn btn-warning" style="color: white; font-size: 15px;"><b>Detalhe</b></a></td>
         </tr>
       </tbody>
     </table>

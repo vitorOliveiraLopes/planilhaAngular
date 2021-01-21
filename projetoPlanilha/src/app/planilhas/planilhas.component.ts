@@ -11,7 +11,7 @@ export class PlanilhasComponent implements OnInit {
     
     tasks: Tasks[];
 
-    headers = ['ID', 'Data','Título']
+    headers = ['ID', 'Data','','']
 
     constructor(private api: ApiService){}
 
