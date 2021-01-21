@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
 import { ApiService } from 'src/app/services/api.service'
 import { Tasks } from '../../core/Tasks'
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
     templateUrl: 'planilhas-detalhe.component.html',
@@ -28,9 +29,9 @@ export class PlanilhasDetalheComponent implements OnInit{
 
     diaDaAtividade;
 
-    cab = ['Titulo', 'Projeto','Tipo da Atividade','Descrição', 'Hora de Início', 'Hora do Término', 'Tempo da Atividade']
+    cab = ['#','Titulo', 'Projeto','Tipo da Atividade','Descrição', 'Hora de Início', 'Hora do Término', 'Tempo da Atividade']
 
-    constructor(private api: ApiService, private router: Router, private route: ActivatedRoute,){}
+    constructor(private api: ApiService, private router: Router, private route: ActivatedRoute, private toastr: ToastrService){}
 
     ngOnInit():void{
         this.getTask(this.route.snapshot.params['id'])
@@ -45,5 +46,9 @@ export class PlanilhasDetalheComponent implements OnInit{
             }
             
         })
+    }
+
+    confirmarExcluir(){
+        this.toastr.success('Task excluída com sucesso !');
     }
 }

@@ -9,13 +9,4 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent{
     constructor(private router: Router){}
-
-
-    isHomeRoute(){
-        return this.router.url != '/home';
-    }
-
-    confirmarExcluir(){
-        
-    }
 }

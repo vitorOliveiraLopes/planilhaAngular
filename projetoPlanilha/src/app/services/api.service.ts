@@ -6,6 +6,10 @@ import { Tasks } from '../core/Tasks'
 
 const urlApi = 'http://localhost:3000/posts'
 
+const httpOptions = {
+    headers: new HttpHeaders({'Content-type':'application/json'})
+}
+
 @Injectable({ providedIn: 'root' })
 export class ApiService {
 
@@ -25,6 +29,12 @@ export class ApiService {
         .pipe(tap( task => console.log(`Task da tabela com id: ${id}`)),
         catchError(this.handleError<Tasks>(`getOneDayTask id = ${id}`))
         )
+    }
+
+    deleteTask(id:number): Observable<Tasks>{
+        const url = `${urlApi}/${id}`
+        return this.http.delete<Tasks>(url,httpOptions)
+        .pipe(tap( deleteTask => console.log('removido a task com Id => ' + id)))
     }
 
     private handleError<T> (operation = 'operation', result?: T) {

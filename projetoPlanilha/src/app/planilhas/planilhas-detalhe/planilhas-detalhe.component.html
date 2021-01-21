@@ -1,14 +1,3 @@
-<!-- <div class="row" *ngFor="let t of tasksPost">
-      <div class="col-sm">
-        {{t.titulo}}
-      </div>
-      <div class="col-sm">
-        {{t.Projeto}}
-      </div>
-      <div class="col-sm">
-        {{t.tipoDaAtividade}}
-      </div>
-    </div> -->
 <div class="container mt-5">
   <h2 class="text-center">Detalhes do dia {{diaDaAtividade}}</h2>
 </div>
@@ -20,7 +9,8 @@
   </thead>
   <tbody>
     <tr *ngFor="let tp of tasksPost">
-      <th class="text-center">{{tp.titulo}}</th>
+      <td><button type="button" class="btn btn-danger btn-sm" style="margin: auto; display:block" (click)="confirmarExcluir()">X</button></td>
+      <td class="text-center">{{tp.titulo}}</td>
       <td class="text-center">{{tp.Projeto}}</td>
       <td class="text-center">{{tp.tipoDaAtividade}}</td>
       <td class="text-center">{{tp.Descricao}}</td>
