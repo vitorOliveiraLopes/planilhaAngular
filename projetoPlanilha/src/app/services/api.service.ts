@@ -37,6 +37,13 @@ export class ApiService {
         .pipe(tap( deleteTask => console.log('removido a task com Id => ' + id)))
     }
 
+    addTasks(dados): Observable<Tasks> {
+        return this.http.post<Tasks>(urlApi, dados, httpOptions)
+            .pipe(tap( (dados:Tasks) => console.log("ADICIONADO")),
+                catchError(this.handleError<Tasks>('addTasks'))
+            )
+    }
+
     private handleError<T> (operation = 'operation', result?: T) {
         return (error: any): Observable<T> => {
             console.log(error);

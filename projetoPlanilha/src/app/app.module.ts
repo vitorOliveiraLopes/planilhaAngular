@@ -18,9 +18,7 @@ import { PlanilhasModule } from 'src/app/planilhas/planilhas.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    PlanilhasModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    PlanilhasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

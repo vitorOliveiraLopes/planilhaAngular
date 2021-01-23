@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup]="dadosTask">
+        <div class="form-group">
+          <label for="dataTask">Data</label>
+          <input type="date" class="form-control" [value]="data" id="dataTask" formControlName="data">
+        </div>
+        <div class="form-group">
+            <label for="tituloTask">Titulo</label>
+            <input type="text" class="form-control" id="tituloTask" placeholder="Insira um título">
+        </div>
+        <button type="submit" class="btn btn-primary">Criar</button>
+    </form>
+</div>
